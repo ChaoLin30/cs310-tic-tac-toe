@@ -1,5 +1,7 @@
 package edu.jsu.mcis;
 
+import edu.jsu.mcis.TicTacToeModel.Mark;
+
 public class TicTacToeView {
 
     private TicTacToeModel model;
@@ -16,15 +18,43 @@ public class TicTacToeView {
         
         /* Print the board to the console (see examples) */
         
-        /* INSERT YOUR CODE HERE */
+        System.out.println(" \n");
+        for(int i =0; i <model.getWidth() ; i++){
+                System.out.println(i);
+                }
+                System.out.println("\n\n");
+        for(int i =0; i< model.getWidth; i++){
+                System.out.println(i + " ");
+                for(int j =0; j<model.getwidth(); j++){
+                        if(model.getMark(i,j) == TicTacToeModel.Mark.EMPTY ){
+                            System.out.println("-");
 
-    }
+                        }
+                        else{
+                                System.out.println(model.getMark(i,j));
+                        }
+                }
+        System.out.println("\n");
+
+        }
+        System.out.println("\n\n\n");        
+        }
+
+
+    
 
     public void showNextMovePrompt() {
 
         /* Display a prompt for the player's next move (see examples) */
 
-        /* INSERT YOUR CODE HERE */
+        if(model.isXTurn()){
+                System.out.println("Player 1 (X) Move: ");
+        }
+        else{
+                System.out.println("Player 2 (O) Move:");
+        }
+        
+        System.out.println("Enter the row and column numbers, separated by a space:");
 
     }
 
@@ -32,7 +62,7 @@ public class TicTacToeView {
 
         /* Display an error if input is invalid (see examples) */
 
-        /* INSERT YOUR CODE HERE */
+        System.out.println("input is invalid");
 
     }
 

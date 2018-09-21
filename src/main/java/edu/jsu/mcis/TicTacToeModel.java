@@ -197,7 +197,7 @@ public class TicTacToeModel {
                 firstCounter++;
             }
         }
-        for(int i=0; i< width; i++){
+        for (int i = 0; i < width; i++) {
             if(getMark(i,width - 1 - i) == mark){
                 secCounter++;
 
@@ -208,7 +208,7 @@ public class TicTacToeModel {
 
             else return false;
         }
-            
+    }    
         
 
     private boolean isTie() {

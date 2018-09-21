@@ -206,10 +206,10 @@ public class TicTacToeModel {
                 return true;
             }
             else return false;
-            {
+            
             }
         }
-}
+
     private boolean isTie() {
         
         /* Check the squares of the board to see if the game is a tie */

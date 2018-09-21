@@ -18,28 +18,28 @@ public class TicTacToeView {
         
         /* Print the board to the console (see examples) */
         
-        System.out.println(" \n");
+        System.out.print(" \n");
         for(int i =0; i <model.getWidth() ; i++){
-                System.out.println(i);
+                System.out.print(i);
                 }
-                System.out.println("\n\n");
+                System.out.print("\n\n");
         for(int i =0; i< model.getWidth(); i++){
-                System.out.println(i + " ");
+                System.out.print(i + " ");
                 for(int j =0; j< model.getWidth() ; j++){
                         if(model.getMark(i,j) == TicTacToeModel.Mark.EMPTY ){
-                            System.out.println("-");
+                            System.out.print("-");
 
                         }
                         else{
-                                System.out.println(model.getMark(i,j));
+                                System.out.print(model.getMark(i,j));
                         }
                 }
-        System.out.println("\n");
+        System.out.print("\n");
 
         }
-        System.out.println("\n\n\n");      
+        System.out.print("\n\n\n");      
         
-        System.out.print("\n  012\n\n0 ---\n1 ---\n2 ---\n\n\n\n");
+        
         }
 
 

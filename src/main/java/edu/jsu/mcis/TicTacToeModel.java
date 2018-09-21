@@ -205,10 +205,11 @@ public class TicTacToeModel {
             if (firstCounter == width || secCounter == width || rowCounter == width || colCounter == width ) {
                 return true;
             }
+
             else return false;
-            
-            }
         }
+            
+        
 
     private boolean isTie() {
         

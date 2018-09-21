@@ -153,7 +153,7 @@ public class TicTacToeModel {
         }
         else if (isTie()){
 
-            return Result.Tie;
+            return Result.TIE;
         }
         else return Result.NONE;
     }
@@ -171,10 +171,10 @@ public class TicTacToeModel {
         for(int i =0; i< width; i++){
             int fCounter = 0;
             for(int j =0; j< width; j++){
-                if(getMark(i,j) == Mark){
+                if (getMark(i,j) == mark){
                     fCounter++;
                 }
-                if(fCounter = width){
+                if(fCounter == width){
                     rowCounter = fCounter;
                 
                 }
@@ -183,10 +183,10 @@ public class TicTacToeModel {
         for(int i =0; i< width; i++){
             int fCounter = 0;
             for(int j =0; j< width; j++){
-                if(getMark(i,j) == Mark){
+                if (getMark(j,i) == mark){
                     fCounter++;
                 }
-                if(fCounter = width){
+                if(fCounter == width){
                     colCounter = fCounter;
                 
                 }

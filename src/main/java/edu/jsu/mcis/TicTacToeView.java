@@ -23,9 +23,9 @@ public class TicTacToeView {
                 System.out.println(i);
                 }
                 System.out.println("\n\n");
-        for(int i =0; i< model.getWidth; i++){
+        for(int i =0; i< model.getWidth(); i++){
                 System.out.println(i + " ");
-                for(int j =0; j<model.getwidth(); j++){
+                for(int j =0; j< model.getWidth() ; j++){
                         if(model.getMark(i,j) == TicTacToeModel.Mark.EMPTY ){
                             System.out.println("-");
 

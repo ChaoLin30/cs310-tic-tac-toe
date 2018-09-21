@@ -36,7 +36,7 @@ public class TicTacToeController {
         
         int row = keyboard.nextInt();
         int col = keyboard.nextInt();
-        if(model.makeMark(row, col)){
+        if(!model.makeMark(row, col)){
             view.showInputError();
         }
     }

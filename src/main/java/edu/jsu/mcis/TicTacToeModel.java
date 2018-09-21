@@ -206,10 +206,10 @@ public class TicTacToeModel {
                 return true;
             }
 
-            else return false;
+            
         }
-    }    
-        
+       return false;
+    }
 
     private boolean isTie() {
         

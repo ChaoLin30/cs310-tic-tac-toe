@@ -37,7 +37,9 @@ public class TicTacToeView {
         System.out.println("\n");
 
         }
-        System.out.println("\n\n\n");        
+        System.out.println("\n\n\n");      
+        
+        System.out.print("\n  012\n\n0 ---\n1 ---\n2 ---\n\n\n\n");
         }
 
 

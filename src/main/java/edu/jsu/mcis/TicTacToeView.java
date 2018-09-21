@@ -22,7 +22,7 @@ public class TicTacToeView {
         for(int i =0; i <model.getWidth() ; i++){
                 System.out.print(i);
                 }
-                System.out.print("\n\n");
+        System.out.print("\n\n");
         for(int i =0; i< model.getWidth(); i++){
                 System.out.print(i + " ");
                 for(int j =0; j< model.getWidth() ; j++){
@@ -34,12 +34,12 @@ public class TicTacToeView {
                                 System.out.print(model.getMark(i,j));
                         }
                 }
-        System.out.print("\n");
+                System.out.print("\n");
 
         }
         System.out.print("\n\n\n");      
         
-        System.out.print("\n  012\n\n0 ---\n1 ---\n2 ---\n\n\n\n");
+        
         }
 
 

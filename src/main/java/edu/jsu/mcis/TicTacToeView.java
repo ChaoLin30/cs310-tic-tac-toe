@@ -56,7 +56,16 @@ public class TicTacToeView extends JPanel implements ActionListener {
         
         String name = ((JButton) event.getSource()).getName(); // Get button name
         
-        // INSERT YOUR CODE HERE 
+        for(int i =0; i< model.getWidth(); i++){
+                for(int j = 0; j< model.getWidth(); j++){
+                    if(event.getSource()== squares(i,j)){
+                        if(!model.makeMark(i,j)){
+                            resultLabel.setText("");
+                        }
+                    }
+                    
+                }
+        }
         
     }
         

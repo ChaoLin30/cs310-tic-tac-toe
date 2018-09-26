@@ -56,8 +56,8 @@ public class TicTacToeView extends JPanel implements ActionListener {
         
         String name = ((JButton) event.getSource()).getName(); // Get button name
         
-        // INSERT YOUR CODE HERE
-
+        // INSERT YOUR CODE HERE 
+        
     }
         
     public void updateSquares() {
